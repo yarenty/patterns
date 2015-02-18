@@ -3,8 +3,11 @@ package com.yarenty;
 import com.yarenty.bussines_delegate.DemoBusinessDelegate;
 import com.yarenty.chainofresponsibility.DemoChain;
 import com.yarenty.command.DemoCommandPattern;
+import com.yarenty.composite_entity.DemoCompositeEntity;
+import com.yarenty.dao.DemoDAO;
 import com.yarenty.factory.DemoFactory;
 import com.yarenty.flyweight.DemoFlyweight;
+import com.yarenty.front_controller.DemoFrontController;
 import com.yarenty.interpreter.DemoInterpreterPattern;
 import com.yarenty.iterator.DemoIteratorPattern;
 import com.yarenty.mediator.DemoMediator;
@@ -41,6 +44,10 @@ public class Main {
         DemoVisitor.main(args);
         DemoMVC.main(args);
         DemoBusinessDelegate.main(args);
+        DemoCompositeEntity.main(args);
+        DemoDAO.main(args);
+        DemoFrontController.main(args);
+
 
     }
 }
