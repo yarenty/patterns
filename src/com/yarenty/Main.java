@@ -21,6 +21,7 @@ import com.yarenty.service_locator.DemoServiceLocator;
 import com.yarenty.state.DemoState;
 import com.yarenty.strategy.DemoStrategy;
 import com.yarenty.template.DemoTemplate;
+import com.yarenty.transfer_object.DemoTransferObject;
 import com.yarenty.visitor.DemoVisitor;
 
 public class Main {
@@ -51,6 +52,7 @@ public class Main {
         DemoFrontController.main(args);
         DemoInterceptingFilter.main(args);
         DemoServiceLocator.main(args);
+        DemoTransferObject.main(args);
 
 
     }
