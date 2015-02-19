@@ -8,6 +8,7 @@ import com.yarenty.dao.DemoDAO;
 import com.yarenty.factory.DemoFactory;
 import com.yarenty.flyweight.DemoFlyweight;
 import com.yarenty.front_controller.DemoFrontController;
+import com.yarenty.intercepting_filter.DemoInterceptingFilter;
 import com.yarenty.interpreter.DemoInterpreterPattern;
 import com.yarenty.iterator.DemoIteratorPattern;
 import com.yarenty.mediator.DemoMediator;
@@ -16,6 +17,7 @@ import com.yarenty.mvc.DemoMVC;
 import com.yarenty.nullobject.DemoNullPattern;
 import com.yarenty.observer.DemoObserver;
 import com.yarenty.proxy.DemoProxy;
+import com.yarenty.service_locator.DemoServiceLocator;
 import com.yarenty.state.DemoState;
 import com.yarenty.strategy.DemoStrategy;
 import com.yarenty.template.DemoTemplate;
@@ -47,6 +49,8 @@ public class Main {
         DemoCompositeEntity.main(args);
         DemoDAO.main(args);
         DemoFrontController.main(args);
+        DemoInterceptingFilter.main(args);
+        DemoServiceLocator.main(args);
 
 
     }
