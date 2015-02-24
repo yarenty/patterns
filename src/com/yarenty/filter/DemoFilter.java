@@ -9,6 +9,14 @@ import java.util.List;
 public class DemoFilter {
 
     public static void main(String[] args) {
+
+        System.out.println("\n\n ***FILTER PATTERN***\n Filter pattern or Criteria pattern is a design pattern" +
+                " that enables developers to filter a set of objects using different criteria and changing them in" +
+                " a decoupled wat through logical operations. This pattern combines multiple criteria to obtain " +
+                " single criteria.\n" +
+                " Structural pattern.\n" +
+                " \n\n");
+
         List<Person> persons = new ArrayList<Person>();
 
         persons.add(new Person("Robert","Male", "Single"));

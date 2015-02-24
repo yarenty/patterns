@@ -1,13 +1,18 @@
 package com.yarenty;
 
 import com.yarenty.abstractfactory.DemoAbstractFactory;
+import com.yarenty.bridge.DemoBridge;
 import com.yarenty.builder.DemoBuilder;
 import com.yarenty.bussines_delegate.DemoBusinessDelegate;
 import com.yarenty.chainofresponsibility.DemoChain;
 import com.yarenty.command.DemoCommandPattern;
+import com.yarenty.composite.DemoComposite;
 import com.yarenty.composite_entity.DemoCompositeEntity;
 import com.yarenty.dao.DemoDAO;
+import com.yarenty.decorator.DemoDecorator;
+import com.yarenty.facade.DemoFacade;
 import com.yarenty.factory.DemoFactory;
+import com.yarenty.filter.DemoFilter;
 import com.yarenty.flyweight.DemoFlyweight;
 import com.yarenty.front_controller.DemoFrontController;
 import com.yarenty.intercepting_filter.DemoInterceptingFilter;
@@ -38,8 +43,11 @@ public class Main {
         DemoSingleton.main(args);
         DemoBuilder.main(args);
         DemoStepBuilder.main(args);
-
-
+        DemoBridge.main(args);
+        DemoFilter.main(args);
+        DemoComposite.main(args);
+        DemoDecorator.main(args);
+        DemoFacade.main(args);
         DemoFlyweight.main(args);
         DemoProxy.main(args);
         DemoChain.main(args);

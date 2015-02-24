@@ -13,6 +13,15 @@ package com.yarenty.facade;
 public class DemoFacade {
 
     public static void main(String[] args){
+
+        System.out.println("\n\n ***FACADE PATTERN***\n  Facade pattern hides the complexities of the system and" +
+                " provides an interface to the client using which the client an access the system. This pattern" +
+                " adds an interface to existing system to hide its complexities. This pattern involves a single" +
+                " class which provides simplified methods required by client and delegates calls to methods of" +
+                " existing classes.  \n" +
+                " Structural pattern.\n" +
+                " \n\n");
+
         ShapeMaker shapeMaker = new ShapeMaker();
 
         shapeMaker.drawCircle();

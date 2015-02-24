@@ -1,4 +1,4 @@
-package com.yarenty.compozite;
+package com.yarenty.composite;
 
 /**
  * Created by yarenty on 02/02/15.

@@ -13,9 +13,10 @@ public class DemoFlyweight {
 
     public static void main(String[] args) {
 
-        System.out.println("\n\n *** FLYWEIGHT PATTERN***\n Flyweight pattern is primarily used to reduce the number of objects created and to decrease memory footprint\n" +
-                " and increase performance. This type of design patter comes under structural pattern provides ways to decrease\n" +
-                " object count this improving the object structure of application.\n\n");
+        System.out.println("\n\n *** FLYWEIGHT PATTERN***\n Flyweight pattern is primarily used to reduce the number" +
+                " of objects created and to decrease memory footprint and increase performance. This type of design" +
+                " patter comes under structural pattern provides ways to decrease object count this improving the" +
+                " object structure of application.\n\n");
 
         for (int i = 0; i<20; ++i) {
             Circle circle = (Circle)ShapeFactory.getSircle(getRandomColor());
