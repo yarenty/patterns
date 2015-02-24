@@ -7,6 +7,14 @@ public class DemoAbstractFactory {
 
         public static void main(String[] args) {
 
+            System.out.println("\n\n *** ABSTRACT FACTORY PATTERN***\n Abstract Factory pattern work around a" +
+                    " super-factory which creates other factories. This is also called as factory of factories." +
+                    " In Abstract Factory pattern an interface is responsible for creating a factory of related" +
+                    " objects without explicitly specifying their classes. Each generated factory can give the" +
+                    " objects as per the Factory pattern.\n" +
+                    " Creational pattern.\n" +
+                    " \n\n");
+
             //get shape factory
             AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
 

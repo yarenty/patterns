@@ -5,6 +5,14 @@ public class DemoFactory {
     public static void main(String[] args) {
 
 
+        System.out.println("\n\n ***FACTORY PATTERN***\n The factory pattern is one of the most used design pattern" +
+                " in Java. Provides one of the best ways to create an object. In factiory pattern, we create object" +
+                " without exposing the creation logic to the client and refer to newly created object using a common" +
+                " interface.\n" +
+                " Creational pattern.\n" +
+                " \n\n");
+
+
         ShapeFactory shapeFactory = new ShapeFactory();
 
         //get an object of Circle and call its draw method.

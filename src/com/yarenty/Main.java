@@ -1,5 +1,7 @@
 package com.yarenty;
 
+import com.yarenty.abstractfactory.DemoAbstractFactory;
+import com.yarenty.builder.DemoBuilder;
 import com.yarenty.bussines_delegate.DemoBusinessDelegate;
 import com.yarenty.chainofresponsibility.DemoChain;
 import com.yarenty.command.DemoCommandPattern;
@@ -18,7 +20,9 @@ import com.yarenty.nullobject.DemoNullPattern;
 import com.yarenty.observer.DemoObserver;
 import com.yarenty.proxy.DemoProxy;
 import com.yarenty.service_locator.DemoServiceLocator;
+import com.yarenty.singleton.DemoSingleton;
 import com.yarenty.state.DemoState;
+import com.yarenty.step_builder.DemoStepBuilder;
 import com.yarenty.strategy.DemoStrategy;
 import com.yarenty.template.DemoTemplate;
 import com.yarenty.transfer_object.DemoTransferObject;
@@ -30,6 +34,11 @@ public class Main {
 
 
         DemoFactory.main(args);
+        DemoAbstractFactory.main(args);
+        DemoSingleton.main(args);
+        DemoBuilder.main(args);
+        DemoStepBuilder.main(args);
+
 
         DemoFlyweight.main(args);
         DemoProxy.main(args);

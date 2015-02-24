@@ -7,6 +7,13 @@ public class DemoBuilder {
 
     public static void main(String[] args) {
 
+        System.out.println("\n\n *** BUILDER PATTERN***\n Builder pattern builds a complex object using simple objects" +
+                " and using a step by step approach. A builder class builds the final object step by step. This" +
+                " builder is independent of other objects. (@see StepBuilder Pattern for easier approach ;-) ) \n" +
+                " Creational pattern.\n" +
+                " \n\n");
+
+
         MealBuilder mealBuilder = new MealBuilder();
 
         Meal vegMeal = mealBuilder.prepareVegMeal();
