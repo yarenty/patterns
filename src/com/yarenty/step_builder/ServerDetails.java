@@ -8,16 +8,8 @@ public class ServerDetails {
     private String user;
     private String password;
 
-    public ServerDetails(String host) {
+    public ServerDetails(final String host) {
         this.host = host;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
     }
 
     public String getHost() {
@@ -28,8 +20,16 @@ public class ServerDetails {
         return user;
     }
 
+    public void setUser(final String user) {
+        this.user = user;
+    }
+
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(final String password) {
+        this.password = password;
     }
 }
 

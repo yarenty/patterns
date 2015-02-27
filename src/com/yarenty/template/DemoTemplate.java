@@ -5,7 +5,7 @@ package com.yarenty.template;
  */
 public class DemoTemplate {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***TEMPLATE PATTERN***\n In template pattern, an abstract exposes defined ways/" +

@@ -10,7 +10,7 @@ public class ClassicBuilder {
     private String user;
     private String password;
 
-    public ClassicBuilder(String name) {
+    public ClassicBuilder(final String name) {
         this.name = name;
     }
 
@@ -19,25 +19,25 @@ public class ClassicBuilder {
         return this;
     }
 
-    public ClassicBuilder onRemoteHost(String remoteHost){
+    public ClassicBuilder onRemoteHost(final String remoteHost) {
         this.host = remoteHost;
         return this;
     }
 
-    public ClassicBuilder credentials(String user, String password) {
+    public ClassicBuilder credentials(final String user, final String password) {
         this.user = user;
         this.password = password;
         return this;
     }
 
     public UserConfiguration build() {
-        UserConfiguration userConfiguration = new UserConfiguration(name);
-        ServerDetails serverDetails = new ServerDetails(host);
+        final UserConfiguration userConfiguration = new UserConfiguration(name);
+        final ServerDetails serverDetails = new ServerDetails(host);
         serverDetails.setUser(user);
         serverDetails.setPassword(password);
         userConfiguration.setServerDetails(serverDetails);
 
-        System.out.println("HOST:"+host+" user:"+user+" pass:"+password + "  ////"+name);
+        System.out.println("HOST:" + host + " user:" + user + " pass:" + password + "  ////" + name);
 
         return userConfiguration;
     }

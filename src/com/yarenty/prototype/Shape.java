@@ -5,12 +5,12 @@ package com.yarenty.prototype;
  */
 public abstract class Shape implements Cloneable {
 
-    private String id;
     protected String type;
+    private String id;
 
     abstract void draw();
 
-    public String getType(){
+    public String getType() {
         return type;
     }
 
@@ -18,7 +18,7 @@ public abstract class Shape implements Cloneable {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(final String id) {
         this.id = id;
     }
 

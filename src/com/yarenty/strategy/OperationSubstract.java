@@ -6,7 +6,7 @@ package com.yarenty.strategy;
 public class OperationSubstract implements Strategy {
 
     @Override
-    public int doOperation(int num1, int num2) {
-        return num1-num2;
+    public int doOperation(final int num1, final int num2) {
+        return num1 - num2;
     }
 }

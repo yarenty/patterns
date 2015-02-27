@@ -5,7 +5,7 @@ package com.yarenty.transfer_object;
  */
 public class DemoTransferObject {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***TRANSFER OBJECT PATTERN***\n The transfer object design pattern is used" +
                 " when we want to pass data with multiple attributes in one shot from client to server. Transfer" +
@@ -21,10 +21,10 @@ public class DemoTransferObject {
                 " \n\n");
 
 
-        StudentBO studentBO = new StudentBO();
+        final StudentBO studentBO = new StudentBO();
 
-        for (StudentVO student: studentBO.getAllStudents()) {
-            System.out.println("Student: Roll No:"+student.getRollNo()+", name::"+student.getName());
+        for (final StudentVO student : studentBO.getAllStudents()) {
+            System.out.println("Student: Roll No:" + student.getRollNo() + ", name::" + student.getName());
         }
 
 
@@ -34,7 +34,7 @@ public class DemoTransferObject {
 
         student = studentBO.getStudent(0);
 
-        System.out.println("Student: Roll No:"+student.getRollNo()+", name::"+student.getName());
+        System.out.println("Student: Roll No:" + student.getRollNo() + ", name::" + student.getName());
     }
 
 }

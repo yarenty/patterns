@@ -6,7 +6,7 @@ package com.yarenty.state;
 public class StopState implements State {
 
     @Override
-    public void doAction(Context context) {
+    public void doAction(final Context context) {
         System.out.println("Player is in stop state");
         context.setState(this);
     }

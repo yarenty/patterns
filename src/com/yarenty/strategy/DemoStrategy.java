@@ -6,7 +6,7 @@ package com.yarenty.strategy;
 public class DemoStrategy {
 
 
-    public static void main(String[] args){
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***STRATEGY PATTERN***\n In strategy pattern, a class behavior or its algorithm " +
@@ -18,11 +18,11 @@ public class DemoStrategy {
                 " object.\n\n");
 
 
-        Context context = new Context( new OperationAdd());
+        Context context = new Context(new OperationAdd());
         System.out.println(("10+5=" + context.executeStrategy(10, 5)));
-        context = new Context( new OperationSubstract());
+        context = new Context(new OperationSubstract());
         System.out.println(("10-5=" + context.executeStrategy(10, 5)));
-        context = new Context( new OperationMultiply());
+        context = new Context(new OperationMultiply());
         System.out.println(("10*5=" + context.executeStrategy(10, 5)));
 
     }

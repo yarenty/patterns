@@ -33,6 +33,11 @@ import com.yarenty.template.DemoTemplate;
 import com.yarenty.transfer_object.DemoTransferObject;
 import com.yarenty.visitor.DemoVisitor;
 
+/**
+ * This is set of examples how ane when to use patterns.
+ *
+ * @author yarenty
+ */
 public class Main {
 
     public static void main(final String[] args) {

@@ -5,11 +5,12 @@ package com.yarenty.step_builder;
  */
 public class StepBuilder {
 
+    private StepBuilder() {
+    }
+
     public static NameStep newBuilder() {
         return new Steps();
     }
-
-    private StepBuilder(){}
 
     public static interface NameStep {
 
@@ -24,12 +25,12 @@ public class StepBuilder {
 
         /**
          * The hostname will be localhost
+         *
          * @return
          */
         public BuildStep onLocalhost();
 
         /**
-         *
          * @param host
          * @return
          */
@@ -39,6 +40,7 @@ public class StepBuilder {
     public static interface CredentialsStep {
         /**
          * username and password required to connect to remote machine
+         *
          * @param user
          * @param password
          * @return
@@ -49,6 +51,7 @@ public class StepBuilder {
     public static interface BuildStep {
         /**
          * instance of user configuration based on the parameters passed during creation
+         *
          * @return
          */
         public UserConfiguration build();
@@ -90,13 +93,13 @@ public class StepBuilder {
 
         @Override
         public UserConfiguration build() {
-            UserConfiguration  userConfiguration = new UserConfiguration(name);
+            UserConfiguration userConfiguration = new UserConfiguration(name);
             ServerDetails serverDetails = new ServerDetails(host);
             serverDetails.setUser(user);
             serverDetails.setPassword(password);
             userConfiguration.setServerDetails(serverDetails);
 
-            System.out.println("HOST:"+host+" user:"+user+" pass:"+password + "  ////"+name);
+            System.out.println("HOST:" + host + " user:" + user + " pass:" + password + "  ////" + name);
 
             return userConfiguration;
         }

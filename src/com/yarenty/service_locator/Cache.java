@@ -14,21 +14,21 @@ public class Cache {
         services = new ArrayList<Service>();
     }
 
-    public Service getService(String serviceName) {
+    public Service getService(final String serviceName) {
 
-        for (Service service:services) {
+        for (final Service service : services) {
             if (service.getName().equalsIgnoreCase(serviceName)) {
-                System.out.println("Returning cached ["+serviceName+"] object");
+                System.out.println("Returning cached [" + serviceName + "] object");
                 return service;
             }
         }
         return null;
     }
 
-    public void addService(Service newService) {
-        boolean exist=false;
+    public void addService(final Service newService) {
+        boolean exist = false;
 
-        for( Service service: services) {
+        for (final Service service : services) {
             if (service.getName().equalsIgnoreCase(newService.getName())) {
                 exist = true;
             }

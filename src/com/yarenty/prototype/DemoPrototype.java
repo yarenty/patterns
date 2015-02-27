@@ -5,7 +5,7 @@ package com.yarenty.prototype;
  */
 public class DemoPrototype {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***PROTOTYPEPATTERN***\n Prototype pattern refers to creating duplicate object while " +
                 " keeping performance in mind. The pattern involves implementing a prototype interface which tells to" +
@@ -18,13 +18,13 @@ public class DemoPrototype {
 
         ShapeCache.loadCache();
 
-        Shape clonedShape = ShapeCache.getShape("1");
+        final Shape clonedShape = ShapeCache.getShape("1");
         System.out.println("Shape : " + clonedShape.getType());
 
-        Shape clonedShape2 = ShapeCache.getShape("2");
+        final Shape clonedShape2 = ShapeCache.getShape("2");
         System.out.println("Shape : " + clonedShape2.getType());
 
-        Shape clonedShape3 = ShapeCache.getShape("3");
+        final Shape clonedShape3 = ShapeCache.getShape("3");
         System.out.println("Shape : " + clonedShape3.getType());
     }
 

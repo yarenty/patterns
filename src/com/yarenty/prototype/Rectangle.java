@@ -5,7 +5,7 @@ package com.yarenty.prototype;
  */
 public class Rectangle extends Shape {
 
-    public Rectangle(){
+    public Rectangle() {
         type = "Rectangle";
     }
 

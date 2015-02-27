@@ -6,8 +6,11 @@ package com.yarenty.visitor;
 public interface ComputerPartVisitor {
 
 
-    public void visit(Computer computer);
-    public void visit(Keyboard keyboard);
-    public void visit(Mouse mouse);
-    public void visit(Monitor monitor);
+    public void visit(final Computer computer);
+
+    public void visit(final Keyboard keyboard);
+
+    public void visit(final Mouse mouse);
+
+    public void visit(final Monitor monitor);
 }

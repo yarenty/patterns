@@ -5,5 +5,5 @@ package com.yarenty.state;
  */
 public interface State {
 
-    public void doAction(Context context);
+    public void doAction(final Context context);
 }

@@ -8,12 +8,8 @@ public class UserConfiguration {
     private final String name;
     private ServerDetails serverDetails;
 
-    public UserConfiguration(String name) {
+    public UserConfiguration(final String name) {
         this.name = name;
-    }
-
-    public void setServerDetails(ServerDetails serverDetails) {
-        this.serverDetails = serverDetails;
     }
 
     public String getName() {
@@ -22,5 +18,9 @@ public class UserConfiguration {
 
     public ServerDetails getServerDetails() {
         return serverDetails;
+    }
+
+    public void setServerDetails(final ServerDetails serverDetails) {
+        this.serverDetails = serverDetails;
     }
 }

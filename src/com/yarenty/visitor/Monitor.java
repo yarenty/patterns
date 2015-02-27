@@ -6,7 +6,7 @@ package com.yarenty.visitor;
 public class Monitor implements ComputerPart {
 
     @Override
-    public void accept(ComputerPartVisitor computerPartVisitor) {
+    public void accept(final ComputerPartVisitor computerPartVisitor) {
         computerPartVisitor.visit(this);
     }
 }

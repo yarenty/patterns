@@ -10,11 +10,11 @@ public class Context {
         state = null;
     }
 
-    public void setState(State state) {
-        this.state = state;
-    }
-
     public State getState() {
         return state;
+    }
+
+    public void setState(final State state) {
+        this.state = state;
     }
 }

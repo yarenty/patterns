@@ -5,8 +5,7 @@ package com.yarenty.service_locator;
  */
 public class DemoServiceLocator {
 
-    public static void main(String[] args) {
-
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***SERVICE LOCATOR PATTERN***\n The service locator design pattern is used" +

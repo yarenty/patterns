@@ -5,7 +5,7 @@ package com.yarenty.singleton;
  */
 public class DemoSingleton {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n *** SINGLETON PATTERN***\n Singleton pattern is one of the simplest design patterns" +
                 " in Java. This pattern involves a single class which is responsible to create an object while making" +
@@ -21,14 +21,14 @@ public class DemoSingleton {
         //this is illegal:
         //SingleObject object = new SingleObject();
 
-        SingleObject object = SingleObject.getInstance();
+        final SingleObject object = SingleObject.getInstance();
 
         object.showMessage();
 
-        ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.getInstance();
+        final ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.getInstance();
         threadSafeSingleton.showMe();
 
-        EnumSingleton enumSingleton = EnumSingleton.INSTANCE;
+        final EnumSingleton enumSingleton = EnumSingleton.INSTANCE;
 
         enumSingleton.doSomething();
 

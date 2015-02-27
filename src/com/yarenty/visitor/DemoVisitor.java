@@ -6,7 +6,7 @@ package com.yarenty.visitor;
 public class DemoVisitor {
 
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***VISITOR PATTERN***\n In visitor pattern, we use a visitor class which changes" +
@@ -16,7 +16,7 @@ public class DemoVisitor {
                 " \n" +
                 " As per pattern, element object hat to accept the visitor object so that visitor handles the" +
                 " operation on the element object.\n\n");
-        ComputerPart computer = new Computer();
+        final ComputerPart computer = new Computer();
         computer.accept(new ComputerPartDisplayVisitor());
     }
 }

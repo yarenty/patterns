@@ -6,7 +6,7 @@ package com.yarenty.state;
 public class StartState implements State {
 
     @Override
-    public void doAction(Context context) {
+    public void doAction(final Context context) {
         System.out.println("Player is in start state");
         context.setState(this);
     }

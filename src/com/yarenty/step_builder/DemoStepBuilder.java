@@ -5,7 +5,7 @@ package com.yarenty.step_builder;
  */
 public class DemoStepBuilder {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n *** STEP BUILDER PATTERN***\n Basically no possibility to avoid necessary steps.\n" +
                 " Creational pattern.\n" +
@@ -22,8 +22,7 @@ public class DemoStepBuilder {
         // there is  no possibility to avoid specify step isf you want to BUILD!!
         StepBuilder.newBuilder().name("step builder local").onLocalhost().build();
 
-        StepBuilder.newBuilder().name("step builder remote").onRemoteHost("127.0.0.2").credentials("user","pass").build();
-
+        StepBuilder.newBuilder().name("step builder remote").onRemoteHost("127.0.0.2").credentials("user", "pass").build();
 
 
     }
