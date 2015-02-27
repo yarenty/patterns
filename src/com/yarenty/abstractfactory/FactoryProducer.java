@@ -4,12 +4,12 @@ package com.yarenty.abstractfactory;
  * Created by yarenty on 02/02/15.
  */
 public class FactoryProducer {
-    public static AbstractFactory getFactory(String choice){
+    public static AbstractFactory getFactory(final String choice) {
 
-        if(choice.equalsIgnoreCase("SHAPE")){
+        if (choice.equalsIgnoreCase("SHAPE")) {
             return new ShapeFactory();
 
-        }else if(choice.equalsIgnoreCase("COLOR")){
+        } else if (choice.equalsIgnoreCase("COLOR")) {
             return new ColorFactory();
         }
 

@@ -5,7 +5,7 @@ package com.yarenty.builder;
  */
 public class DemoBuilder {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n *** BUILDER PATTERN***\n Builder pattern builds a complex object using simple objects" +
                 " and using a step by step approach. A builder class builds the final object step by step. This" +
@@ -14,14 +14,14 @@ public class DemoBuilder {
                 " \n\n");
 
 
-        MealBuilder mealBuilder = new MealBuilder();
+        final MealBuilder mealBuilder = new MealBuilder();
 
-        Meal vegMeal = mealBuilder.prepareVegMeal();
+        final Meal vegMeal = mealBuilder.prepareVegMeal();
         System.out.println("Veg Meal");
         vegMeal.showItems();
         System.out.println("Total Cost: " + vegMeal.getCost());
 
-        Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
+        final Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
         System.out.println("\n\nNon-Veg Meal");
         nonVegMeal.showItems();
         System.out.println("Total Cost: " + nonVegMeal.getCost());

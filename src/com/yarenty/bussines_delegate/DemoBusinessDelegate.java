@@ -5,7 +5,7 @@ package com.yarenty.bussines_delegate;
  */
 public class DemoBusinessDelegate {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***BUSINESS DELEGATE PATTERN***\n Business delegate pattern is used to decouple " +
                 " presentation tier. It is basically use to reduce communication or remote lookup functionality to" +
@@ -21,10 +21,10 @@ public class DemoBusinessDelegate {
                 " \n" +
                 " \n\n");
 
-        BusinessDelegate businessDelegate = new BusinessDelegate();
+        final BusinessDelegate businessDelegate = new BusinessDelegate();
         businessDelegate.setServiceType("EJB");
 
-        Client client = new Client(businessDelegate);
+        final Client client = new Client(businessDelegate);
         client.doTask();
 
         businessDelegate.setServiceType("JMS");

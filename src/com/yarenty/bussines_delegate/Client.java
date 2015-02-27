@@ -6,7 +6,7 @@ package com.yarenty.bussines_delegate;
 public class Client {
     BusinessDelegate businessDelegate;
 
-    public Client(BusinessDelegate businessDelegate) {
+    public Client(final BusinessDelegate businessDelegate) {
         this.businessDelegate = businessDelegate;
     }
 

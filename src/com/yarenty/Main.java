@@ -35,7 +35,7 @@ import com.yarenty.visitor.DemoVisitor;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         DemoFactory.main(args);

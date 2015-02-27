@@ -4,7 +4,7 @@ package com.yarenty.composite;
  * Created by yarenty on 02/02/15.
  */
 public class DemoComposite {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***COMPOSITE PATTERN***\n Composite pattern is used where we need to treat a group" +
                 " of objects in similar way as a single object. Composite pattern composes objects in term of" +
@@ -14,17 +14,17 @@ public class DemoComposite {
                 " Structural pattern.\n" +
                 " \n\n");
 
-        Employee CEO = new Employee("John","CEO", 30000);
+        final Employee CEO = new Employee("John","CEO", 30000);
 
-        Employee headSales = new Employee("Robert","Head Sales", 20000);
+        final Employee headSales = new Employee("Robert","Head Sales", 20000);
 
-        Employee headMarketing = new Employee("Michel","Head Marketing", 20000);
+        final Employee headMarketing = new Employee("Michel","Head Marketing", 20000);
 
-        Employee clerk1 = new Employee("Laura","Marketing", 10000);
-        Employee clerk2 = new Employee("Bob","Marketing", 10000);
+        final Employee clerk1 = new Employee("Laura","Marketing", 10000);
+        final Employee clerk2 = new Employee("Bob","Marketing", 10000);
 
-        Employee salesExecutive1 = new Employee("Richard","Sales", 10000);
-        Employee salesExecutive2 = new Employee("Rob","Sales", 10000);
+        final Employee salesExecutive1 = new Employee("Richard","Sales", 10000);
+        final Employee salesExecutive2 = new Employee("Rob","Sales", 10000);
 
         CEO.add(headSales);
         CEO.add(headMarketing);
@@ -38,10 +38,10 @@ public class DemoComposite {
         //print all employees of the organization
         System.out.println(CEO);
 
-        for (Employee headEmployee : CEO.getSubordinates()) {
+        for (final Employee headEmployee : CEO.getSubordinates()) {
             System.out.println(headEmployee);
 
-            for (Employee employee : headEmployee.getSubordinates()) {
+            for (final Employee employee : headEmployee.getSubordinates()) {
                 System.out.println(employee);
             }
         }

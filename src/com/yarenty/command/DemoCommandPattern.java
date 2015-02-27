@@ -6,8 +6,7 @@ package com.yarenty.command;
 public class DemoCommandPattern {
 
 
-
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n **COMMAND PATTERN*** \n Command pattern is data driven pattern" +
@@ -16,15 +15,15 @@ public class DemoCommandPattern {
                 " command to the corresponding object which executes the command.\n" +
                 " \n" +
                 " Behavioral pattern.\n" +
-                " \n\n" );
+                " \n\n");
 
 
-        Stock absStock = new Stock();
+        final Stock absStock = new Stock();
 
-        BuyStock buyStockOrder = new BuyStock(absStock);
-        SellStock sellStockOrder = new SellStock(absStock);
+        final BuyStock buyStockOrder = new BuyStock(absStock);
+        final SellStock sellStockOrder = new SellStock(absStock);
 
-        Broker broker = new Broker();
+        final Broker broker = new Broker();
         broker.takeOrder(buyStockOrder);
         broker.takeOrder(sellStockOrder);
 

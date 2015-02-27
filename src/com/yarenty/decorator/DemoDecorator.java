@@ -4,7 +4,7 @@ package com.yarenty.decorator;
  * Created by yarenty on 02/02/15.
  */
 public class DemoDecorator {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***DECORATOR PATTERN***\n Decorator pattern allows a user to add new functionality" +
@@ -14,11 +14,11 @@ public class DemoDecorator {
                 " Structural pattern.\n" +
                 " \n\n");
 
-        Shape circle = new Circle();
+        final Shape circle = new Circle();
 
-        Shape redCircle = new RedShapeDecorator(new Circle());
+        final Shape redCircle = new RedShapeDecorator(new Circle());
 
-        Shape redRectangle = new RedShapeDecorator(new Rectangle());
+        final Shape redRectangle = new RedShapeDecorator(new Rectangle());
         System.out.println("Circle with normal border");
         circle.draw();
 

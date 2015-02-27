@@ -7,7 +7,7 @@ public class SellStock implements Order {
 
     private Stock abcStock;
 
-    public SellStock(Stock absStock) {
+    public SellStock(final Stock absStock) {
         this.abcStock = absStock;
     }
 

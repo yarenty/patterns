@@ -4,7 +4,7 @@ package com.yarenty.adapter;
  * Created by yarenty on 02/02/15.
  */
 public class DemoAdapter {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***ADAPTER PATTERN***\n Adapter pattern works as bridge between two incompatible" +
                 " interfaces. This pattern involves a single class which is responsible to join functionalities " +
@@ -15,7 +15,7 @@ public class DemoAdapter {
                 " \n\n");
 
 
-        AudioPlayer audioPlayer = new AudioPlayer();
+        final AudioPlayer audioPlayer = new AudioPlayer();
 
         audioPlayer.play("mp3", "beyond the horizon.mp3");
         audioPlayer.play("mp4", "alone.mp4");

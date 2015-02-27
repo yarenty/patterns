@@ -5,7 +5,7 @@ package com.yarenty.bridge;
  */
 public class DemoBridge {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***BRIDGE PATTERN***\n Bridge is used when we need to decouple an abstraction from" +
                 " its implementation so that the two can vary independently. The pattern involves an interface which" +
@@ -15,8 +15,8 @@ public class DemoBridge {
                 " \n\n");
 
 
-        Shape redCircle = new Circle(100,100, 10, new RedCircle());
-        Shape greenCircle = new Circle(100,100, 10, new GreenCircle());
+        final Shape redCircle = new Circle(100, 100, 10, new RedCircle());
+        final Shape greenCircle = new Circle(100, 100, 10, new GreenCircle());
 
         redCircle.draw();
         greenCircle.draw();

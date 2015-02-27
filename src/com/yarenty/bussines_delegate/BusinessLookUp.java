@@ -5,7 +5,7 @@ package com.yarenty.bussines_delegate;
  */
 public class BusinessLookUp {
 
-    public BusinessService getBusinessService(String serviceType){
+    public BusinessService getBusinessService(final String serviceType) {
         if (serviceType.equalsIgnoreCase("EJB")) {
             return new EJBService();
         }

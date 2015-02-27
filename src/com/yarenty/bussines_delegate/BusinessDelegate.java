@@ -5,15 +5,15 @@ package com.yarenty.bussines_delegate;
  */
 public class BusinessDelegate {
 
-    private BusinessLookUp lookupService = new BusinessLookUp();
+    private final BusinessLookUp lookupService = new BusinessLookUp();
     private BusinessService businessService;
     private String serviceType;
 
-    public void setServiceType(String serviceType) {
+    public void setServiceType(final String serviceType) {
         this.serviceType = serviceType;
     }
 
-    public void doTask(){
+    public void doTask() {
         businessService = lookupService.getBusinessService(serviceType);
         businessService.doProcessing();
     }
