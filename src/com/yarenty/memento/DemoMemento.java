@@ -5,7 +5,7 @@ package com.yarenty.memento;
  */
 public class DemoMemento {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n **MEMENTO PATTERN*** \n Memento pattern is used to restore state of an object" +
@@ -16,10 +16,10 @@ public class DemoMemento {
                 " > Memento contains state of an object to be restored.\n" +
                 " > Originator creates and stores states in Memento objects.\n" +
                 " > Caretaker object is responsible to restore object state from Memento." +
-                " \n\n" );
+                " \n\n");
 
-        Originator originator = new Originator();
-        CareTaker careTaker = new CareTaker();
+        final Originator originator = new Originator();
+        final CareTaker careTaker = new CareTaker();
 
         originator.setState("State #1");
         originator.setState("State #2");
@@ -29,7 +29,7 @@ public class DemoMemento {
         careTaker.add(originator.saveStateToMemento());
 
         originator.setState("State #4");
-        System.out.println("Current state::"+originator.getState());
+        System.out.println("Current state::" + originator.getState());
 
         originator.getStateFromMemento(careTaker.get(0));
         System.out.println("First saved state::" + originator.getState());

@@ -8,13 +8,13 @@ import java.util.List;
  */
 public class CareTaker {
 
-    private List<Memento> mementoList = new ArrayList<Memento>();
+    private final List<Memento> mementoList = new ArrayList<Memento>();
 
-    public void add(Memento state) {
+    public void add(final Memento state) {
         mementoList.add(state);
     }
 
-    public Memento get(int index){
+    public Memento get(final int index) {
         return mementoList.get(index);
     }
 }

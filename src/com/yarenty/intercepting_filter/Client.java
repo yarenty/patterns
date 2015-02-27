@@ -7,11 +7,11 @@ public class Client {
 
     FilterManager filterManager;
 
-    public void setFilterManager(FilterManager filterManager) {
+    public void setFilterManager(final FilterManager filterManager) {
         this.filterManager = filterManager;
     }
 
-    public void sendRequest(String request) {
+    public void sendRequest(final String request) {
         filterManager.filterRequest(request);
     }
 }

@@ -7,7 +7,7 @@ public class Memento {
 
     String state;
 
-    public Memento(String state) {
+    public Memento(final String state) {
         this.state = state;
     }
 

@@ -6,9 +6,9 @@ package com.yarenty.composite_entity;
 public class DemoCompositeEntity {
 
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        System.out.println("\n\n ***COMPOSITE ENTITY PATTERN***\n Composite entity pattern is used  in EJB persistence"+
+        System.out.println("\n\n ***COMPOSITE ENTITY PATTERN***\n Composite entity pattern is used  in EJB persistence" +
                 " mechanism. A Composite entity is an EJB entity bean which represents a graph of objects." +
                 " When a composite entity is updated, internally dependent object beans get updated automatically" +
                 " as being managed by EJB entity bean. Following are the participants in Composite Entity Bean:\n" +
@@ -23,11 +23,11 @@ public class DemoCompositeEntity {
                 " \n" +
                 " \n\n");
 
-        Client client = new Client();
+        final Client client = new Client();
         client.setData("Test", "Data");
         client.printData();
 
-        client.setData("Second","TEst");
+        client.setData("Second", "TEst");
         client.printData();
     }
 }

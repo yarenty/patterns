@@ -5,7 +5,7 @@ package com.yarenty.nullobject;
  */
 public class RealCustomer extends AbstractCustomer {
 
-    public RealCustomer(String name) {
+    public RealCustomer(final String name) {
         this.name = name;
     }
 

@@ -6,7 +6,7 @@ package com.yarenty.intercepting_filter;
 public class DebugFilter implements Filter {
 
     @Override
-    public void execute(String request) {
+    public void execute(final String request) {
         System.out.println("DEBUG request:" + request);
     }
 }

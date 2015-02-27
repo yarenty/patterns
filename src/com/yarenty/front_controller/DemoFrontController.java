@@ -5,7 +5,7 @@ package com.yarenty.front_controller;
  */
 public class DemoFrontController {
 
-    public static void main(String[] args){
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***FRONT CONTROLLER PATTERN***\n Front controller pattern is used to provide " +
                 " centralized request handling mechanism co that all requests will be handled by a single handler." +
@@ -19,7 +19,7 @@ public class DemoFrontController {
                 " \n" +
                 " \n\n");
 
-        FrontController frontController = new FrontController();
+        final FrontController frontController = new FrontController();
         frontController.dispatchRequest("HOME");
         frontController.dispatchRequest("STUDENT");
     }

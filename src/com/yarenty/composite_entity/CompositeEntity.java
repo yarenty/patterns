@@ -5,10 +5,10 @@ package com.yarenty.composite_entity;
  */
 public class CompositeEntity {
 
-    private CoarseGrainedObject cgo = new CoarseGrainedObject();
+    private final CoarseGrainedObject cgo = new CoarseGrainedObject();
 
-    public void setData(String d1, String d2) {
-        cgo.setData(d1,d2);
+    public void setData(final String d1, final String d2) {
+        cgo.setData(d1, d2);
     }
 
 

@@ -11,16 +11,16 @@ public class FrontController {
         dispacher = new Dispacher();
     }
 
-    private boolean isAuthenticUser(){
+    private boolean isAuthenticUser() {
         System.out.println("User is authenticated successfully.");
         return true;
     }
 
-    private void trackRequest(String request) {
-        System.out.println("Page requested:" +request);
+    private void trackRequest(final String request) {
+        System.out.println("Page requested:" + request);
     }
 
-    public void dispatchRequest(String request) {
+    public void dispatchRequest(final String request) {
         trackRequest(request);
 
         if (isAuthenticUser()) {

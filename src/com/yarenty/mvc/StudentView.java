@@ -5,9 +5,9 @@ package com.yarenty.mvc;
  */
 public class StudentView {
 
-    public void printStudentDetails(String studentName, String studentRollNo){
+    public void printStudentDetails(final String studentName, final String studentRollNo) {
         System.out.println("Student::");
-        System.out.println("Name:"+ studentName);
-        System.out.println("Roll No:"+ studentRollNo);
+        System.out.println("Name:" + studentName);
+        System.out.println("Roll No:" + studentRollNo);
     }
 }

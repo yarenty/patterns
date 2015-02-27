@@ -7,12 +7,12 @@ public class TerminalExpression implements Expression {
 
     private String data;
 
-    public TerminalExpression(String data){
+    public TerminalExpression(final String data) {
         this.data = data;
     }
 
     @Override
-    public boolean interpret(String context) {
+    public boolean interpret(final String context) {
 
         if (context.contains(data)) {
             return true;

@@ -5,7 +5,7 @@ package com.yarenty.mediator;
  */
 public class DemoMediator {
 
-    public static void main(String[] args){
+    public static void main(final String[] args) {
 
         System.out.println("\n\n **MEDIATOR PATTERN*** \n Mediator pattern is used to reduce communication complexity" +
                 " between multiple objects or classes. This pattern provides mediator class which normally  handles" +
@@ -13,10 +13,10 @@ public class DemoMediator {
                 " coupling. " +
                 " \n" +
                 " Behavioral pattern.\n" +
-                " \n\n" );
+                " \n\n");
 
-        User robert = new User("Robert");
-        User john = new User("John");
+        final User robert = new User("Robert");
+        final User john = new User("John");
 
         robert.sendMessage("Hi John");
         john.sendMessage("Hello how r u?");

@@ -5,7 +5,7 @@ package com.yarenty.mvc;
  */
 public class DemoMVC {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***MCV PATTERN***\n MVC pattern is used to separate application's concerns:\n" +
@@ -18,11 +18,11 @@ public class DemoMVC {
                 " \n\n");
 
 
-        Student model = retrieveStudent();
+        final Student model = retrieveStudent();
 
-        StudentView view = new StudentView();
+        final StudentView view = new StudentView();
 
-        StudentController controller = new StudentController(model, view);
+        final StudentController controller = new StudentController(model, view);
 
         controller.updateView();
 
@@ -32,10 +32,8 @@ public class DemoMVC {
     }
 
 
-
-
     private static Student retrieveStudent() {
-        Student student = new Student();
+        final Student student = new Student();
         student.setName("Robert");
         student.setRollNo("10");
         return student;

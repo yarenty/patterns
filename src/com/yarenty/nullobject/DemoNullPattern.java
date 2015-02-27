@@ -5,7 +5,7 @@ package com.yarenty.nullobject;
  */
 public class DemoNullPattern {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***NULL OBJECT PATTERN***\n In null object pattern, a null object replaces check" +
                 " of NULL object instance. Instead of putting check for a null value, Null Object reflects a do " +
@@ -18,10 +18,10 @@ public class DemoNullPattern {
                 " used seamlessly where we need check null value.\n\n");
 
 
-        AbstractCustomer c1 =  CustomerFactory.getCustomer("Rob");
-        AbstractCustomer c2 = CustomerFactory.getCustomer("Bob");
-        AbstractCustomer c3 = CustomerFactory.getCustomer("Julie");
-        AbstractCustomer c4 = CustomerFactory.getCustomer("Laura");
+        final AbstractCustomer c1 = CustomerFactory.getCustomer("Rob");
+        final AbstractCustomer c2 = CustomerFactory.getCustomer("Bob");
+        final AbstractCustomer c3 = CustomerFactory.getCustomer("Julie");
+        final AbstractCustomer c4 = CustomerFactory.getCustomer("Laura");
 
         System.out.println("Customers::");
         System.out.println(c1.getName());

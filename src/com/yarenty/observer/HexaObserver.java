@@ -5,7 +5,7 @@ package com.yarenty.observer;
  */
 public class HexaObserver extends Observer {
 
-    public HexaObserver(Subject subject) {
+    public HexaObserver(final Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
     }

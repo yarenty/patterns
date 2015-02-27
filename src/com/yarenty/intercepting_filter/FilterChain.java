@@ -8,21 +8,21 @@ import java.util.List;
  */
 public class FilterChain {
 
-    private List<Filter> filters = new ArrayList<Filter>();
+    private final List<Filter> filters = new ArrayList<Filter>();
     private Target target;
 
-    public void addFilter(Filter filter){
+    public void addFilter(final Filter filter) {
         filters.add(filter);
     }
 
-    public void execute(String request){
-        for (Filter filter: filters) {
+    public void execute(final String request) {
+        for (final Filter filter : filters) {
             filter.execute(request);
         }
         target.execute(request);
     }
 
-    public void setTarget(Target target) {
+    public void setTarget(final Target target) {
         this.target = target;
     }
 

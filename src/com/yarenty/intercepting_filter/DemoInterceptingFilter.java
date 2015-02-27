@@ -5,7 +5,7 @@ package com.yarenty.intercepting_filter;
  */
 public class DemoInterceptingFilter {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         System.out.println("\n\n ***INTERCEPTING FILTER PATTERN***\n The intercepting filter design pattern is used" +
                 " when we want to do some pre-processing/post-processing with request or response of the application." +
@@ -20,11 +20,11 @@ public class DemoInterceptingFilter {
                 " > CLIENT - is the object who sends request to the target object.\n " +
                 " \n\n");
 
-        FilterManager filterManager = new FilterManager(new Target());
+        final FilterManager filterManager = new FilterManager(new Target());
         filterManager.setFilter(new AuthenticationFilter());
         filterManager.setFilter(new DebugFilter());
 
-        Client client = new Client();
+        final Client client = new Client();
         client.setFilterManager(filterManager);
         client.sendRequest("HOME");
     }

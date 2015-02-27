@@ -5,7 +5,7 @@ package com.yarenty.observer;
  */
 public class BinaryObserver extends Observer {
 
-    public BinaryObserver(Subject subject) {
+    public BinaryObserver(final Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
     }

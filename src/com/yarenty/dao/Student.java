@@ -8,7 +8,7 @@ public class Student {
     private int rollNo;
     private String name;
 
-    public Student(String name, int rollNo) {
+    public Student(final String name, final int rollNo) {
         this.name = name;
         this.rollNo = rollNo;
     }
@@ -17,15 +17,15 @@ public class Student {
         return rollNo;
     }
 
-    public void setRollNo(int rollNo) {
+    public void setRollNo(final int rollNo) {
         this.rollNo = rollNo;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
     }
 }

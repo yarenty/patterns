@@ -5,7 +5,7 @@ package com.yarenty.observer;
  */
 public class OctalObserver extends Observer {
 
-    public OctalObserver(Subject subject) {
+    public OctalObserver(final Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
     }

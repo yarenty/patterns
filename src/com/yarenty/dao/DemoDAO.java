@@ -5,7 +5,7 @@ package com.yarenty.dao;
  */
 public class DemoDAO {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
 
         System.out.println("\n\n ***DAO  PATTERN***\n Data Access Object Pattern is used to separate loe level data" +
@@ -21,24 +21,24 @@ public class DemoDAO {
                 " \n" +
                 " \n\n");
 
-        StudentDao studentDao = new StudentDaoImpl();
+        final StudentDao studentDao = new StudentDaoImpl();
 
-        for (Student student: studentDao.getAllStudents()) {
-            System.out.println("Student: [RollNo:"+student.getRollNo()+", name:"+student.getName()+"]");
+        for (final Student student : studentDao.getAllStudents()) {
+            System.out.println("Student: [RollNo:" + student.getRollNo() + ", name:" + student.getName() + "]");
         }
 
-        Student student = studentDao.getAllStudents().get(0);
+        final Student student = studentDao.getAllStudents().get(0);
         student.setName("Michael");
         studentDao.updateStudent(student);
 
         studentDao.getStudent(1);
         System.out.println("UPDATE");
-        System.out.println("Student: [RollNo:"+student.getRollNo()+", name:"+student.getName()+"]");
+        System.out.println("Student: [RollNo:" + student.getRollNo() + ", name:" + student.getName() + "]");
         studentDao.deleteStudent(student);
 
         System.out.println("REMOVE");
-        for (Student s: studentDao.getAllStudents()) {
-            System.out.println("Student: [RollNo:"+s.getRollNo()+", name:"+s.getName()+"]");
+        for (final Student s : studentDao.getAllStudents()) {
+            System.out.println("Student: [RollNo:" + s.getRollNo() + ", name:" + s.getName() + "]");
         }
     }
 }

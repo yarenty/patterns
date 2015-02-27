@@ -14,7 +14,7 @@ public class Dispacher {
     }
 
 
-    public void dispatch(String request) {
+    public void dispatch(final String request) {
         if (request.equalsIgnoreCase("STUDENT")) {
             studentView.show();
         } else {

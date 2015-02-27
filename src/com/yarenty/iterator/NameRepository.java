@@ -5,7 +5,7 @@ package com.yarenty.iterator;
  */
 public class NameRepository implements Container {
 
-    public String names[] = {"Robert","John","Julie","Regina"};
+    public final String names[] = {"Robert", "John", "Julie", "Regina"};
 
     @Override
     public Iterator getIterator() {
@@ -17,7 +17,7 @@ public class NameRepository implements Container {
 
         @Override
         public boolean hasNext() {
-            if (index<names.length) {
+            if (index < names.length) {
                 return true;
             }
             return false;
